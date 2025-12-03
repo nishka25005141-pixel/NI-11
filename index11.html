@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Real Estate Listings</title>
+<style>
+body{font-family:Arial;margin:0;background:#f9f9f9;color:#333}
+header{background:#2c3e50;color:#fff;padding:15px;text-align:center}
+section{padding:20px;max-width:900px;margin:auto}
+.search input{padding:8px;margin:5px}
+.listings{display:flex;gap:15px;flex-wrap:wrap}
+.card{background:#fff;border:1px solid #ccc;border-radius:8px;width:280px;padding:10px}
+.card img{width:100%;border-radius:6px}
+form{display:flex;flex-direction:column;gap:10px}
+input,textarea{padding:8px;border:1px solid #ccc;border-radius:4px}
+button{background:#2c3e50;color:#fff;padding:8px;border:none;border-radius:4px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🏠 Dream Homes Realty</h1>
+  <div class="search">
+    <input type="text" placeholder="Location">
+    <input type="number" placeholder="Max Price">
+    <button>Search</button>
+  </div>
+</header>
+<section class="listings">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=600" alt="House1">
+    <h3>Modern Villa</h3><p>Delhi • ₹1.2 Cr</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1572120360610-d971b9b63972?w=600" alt="House2">
+    <h3>Luxury Apartment</h3><p>Mumbai • ₹95 Lakh</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="House3">
+    <h3>Cozy Cottage</h3><p>Bengaluru • ₹75 Lakh</p>
+  </div>
+</section>
+<section>
+  <h2>Inquiry Form</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="3" placeholder="Message"></textarea>
+    <button type="submit">Send Inquiry</button>
+  </form>
+</section>
+</body>
+</html>
